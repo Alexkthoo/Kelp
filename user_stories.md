@@ -6,7 +6,7 @@
 
 - As an unregistered and unauthorized user, I want to be able to sign up for the website via a sign-up form.
   - When I'm on the `/signup` page:
-    - I would like to be able to enter my email, first name, last name, zip code, and preferred password on a clearly laid out form.
+    - I would like to be able to enter my first name, last name, email address, zip code, user status (business account or non-business account), and preferred password on a clearly laid out form.
     - I would like the website to log me in upon successful completion of the sign-up form.
       - So that I can seamlessly access the site's functionality
   - When I enter invalid data on the sign-up form:
@@ -44,12 +44,12 @@
 
 - As a logged in verified business user, I want to be able to create a new business on Kelp.
   - When I'm on the `/spots/new` page:
-    - I would like to be able to enter my business name, address, city, state, catagories, open hours, close hours, description, business' price range on a clearly laid out form.
+    - I would like to be able to enter my business name, address, city, state, zipcode, categories, open hours, close hours, description, and price range on a clearly laid out form.
       - So that my business will show up when someone is looking for it.
 
 ### Viewing all Business
 
-- As a logged in _or_ logged out user, I want to be able to view a selection of all the business that matches the filter(business name, city, state, or zip code).
+- As a logged in _or_ logged out user, I want to be able to view a selection of all the business that matches the filter (business name, city, state, zip code, category, or price range).
 
   - When I'm on the `/spots` page:
     - I can view the 6 most closely matched business.
@@ -57,7 +57,7 @@
 
 - As a logged in _or_ logged out user, I want to be able to view a specific business and its associated business' information and reviews.
   - When I'm on the `/spots/:id` page:
-    - I can view the content of the specific business, as well as the associated information(hours, location, image, etc ) and reviews.
+    - I can view the content of the specific business, as well as the associated information (hours, location, image, etc) and reviews.
       - So that I can read and understand what sort of business this shop is running.
 
 ### Updating Business
@@ -69,14 +69,14 @@
 
 ### Deleting Business
 
-- As a logged in business user/owner, I want to be able to delete my restaurant by clicking a Delete button associated with the "manage business" anywhere that the restaurant appears.
+- As a logged in business user/owner, I want to be able to delete my business by clicking a Delete button associated with the "manage business" anywhere that the business appears.
   - When I'm on the `/spots/current` pages:
-    - I can click "Delete" to permanently delete a restaurant I have listed.
-      - So when a restaurant is no longer in business, the business owner can remove it.
+    - I can click "Delete" to permanently delete a business I have listed.
+      - So when a business is no longer operational, the business owner can remove it.
 
 ## Kelp's Business Reviews
 
-### Create new review
+### Create new review for a specific business
 
 - As a logged in user, I want to be able to create a new review on a specific business on Kelp.
   - When I'm on the `/spots/:id` page:
@@ -91,14 +91,14 @@
     - I can view up to the 8 most recent reviews.
       - So that I can decide if I want to check out this business.
 
-### Updating Restaurant(s)
+### Updating a review for a specific business
 
-- As a logged in user that has left a review for a specific business, I want to be able to edit my review by clicking an Edit button associated with the restaurant in the review section.
+- As a logged in user that has left a review for a specific business, I want to be able to edit my review by clicking an Edit button associated with the business in the review section.
   - When I'm on the `/spots/:id` pages:
     - I can click "Edit" to make permanent changes to the review I have posted.
       - So that I can fix/update any errors I make when I wrote the review.
 
-### Deleting Restaurant(s)
+### Deleting a review for a specific business
 
 - As a logged in user that has left a review for a specific business, I want to be able to delete my review by clicking a Delete button associated with the review I left in the review section.
   - When I'm on the `/spots/:id` pages:
