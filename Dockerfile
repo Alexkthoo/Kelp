@@ -15,7 +15,7 @@ ARG FLASK_APP
 ARG FLASK_ENV
 ARG DATABASE_URL
 ARG SCHEMA
-ARG REACT_APP_BASEURL
+ARG REACT_APP_BASE_URL
 ARG SECRET_KEY
 
 WORKDIR /var/www
@@ -32,4 +32,4 @@ RUN flask db upgrade
 
 RUN flask seed all
 
-CMD gunicorn app:app    
+CMD gunicorn app:app
